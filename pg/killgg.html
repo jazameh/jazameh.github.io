@@ -99,9 +99,34 @@ https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
 <body>
     <div id="particles-js"></div>
     <div class="box">
-        <h1 class="big">KilGG</h1>
-        <h2 class="normal">funny ChromeOS killer</h2>
-        <button onclick="redirect('stuff')">stuff</button>
+        <h1 class="big">KillGG</h1>
+        <h2 class="normal">get rid of goguardian completely!</h2>
+        <div class="break"></div>
+        <h1 class="big">How To Use KillGG</h1>
+        <br/>
+        <h2 class="normal">First, setup <a href="pg/urun.html">uRun</a>.</h2>
+        <br/>
+        <h2 class="normal">Then, go to any blocked page.</h2>
+        <br/>
+        <h2 class="normal">Once the GoGuardian popup shows, press Ctrl ~ to open uRun prompt.</h2>
+        <br/>
+        <h2 class="normal">Paste this into the prompt:</h2>
+        <br/>
+        <h3 style="scale: 0.3;font-family: monospace;">let cookies = [];for (let i = 0; i < 2e3; i++) {  cookies.push({    name: `cd${i}`,    value: encodeURIComponent(btoa(crypto.getRandomValues(new Uint8Array(25 * 25)))),    expires: new Date(2e14).toUTCString(),    path: "/",    domain: location.host.split(".").slice(-2).join(".")  });}cookies = cookies.map(cookie => `${cookie.name}=${cookie.value};expires=${cookie.expires};path=${cookie.path};domain=${cookie.domain};`);cookies.forEach((cookie) => (document.cookie = cookie));history.replaceState({},{},'/')</h3>
+        <br/>
+        <h2 class="normal">Hit enter and now part of the URL should be gone. You have done it!</h2>
+        <br/>
+        <h2 class="normal">YouTube and all blocked sites are now unblocked!</h2>
+        <br/>
+        <h1 class="big">How Do I Undo This?</h1>
+        <br/>
+        <h2 class="normal">First, go to chrome://settings/clearBrowserData</h2>
+        <br/>
+        <h2 class="normal">Uncheck everything other than "Cookies and other site data"</h2>
+        <br/>
+        <h2 class="normal">Set the time to whatever depending on when you performed the exploit, and click Clear data.</h2>
+        <br/>
+        <h2 class="normal">Now GoGuardian should return. (why would you want that?)</h2>
         <!--<h2 class="compost">MT</h2>
         <div class="break"></div>
         <button onclick="redirect('exploits')">Exploits</button>
